@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Registro</title>
+  <link rel="stylesheet" type="text/css" href="pagina-registro.css">
+</head>
+<body>
+  <div class="container">
+    <form action="registro.php" method="POST">
+      <h2>Crear cuenta</h2>
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="tel" placeholder="Número de teléfono" required>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <input type="password" id="confirm-password" placeholder="Confirmar contraseña" required>
+      <p id="error-message" class="error-message"></p>
+      <button type="submit" onclick="validarFormulario()">Crear cuenta</button>
+      <p>¿Ya tienes una cuenta? <a href="index.html">Inicia sesión</a></p>
+    </form>
+  </div>
+  
+  <script src="validaciones.js"></script>
+</body>
+</html>
